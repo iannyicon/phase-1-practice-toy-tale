@@ -13,14 +13,20 @@
       />
     </div>
 
-    <div class="container">
+    <p style="text-align:center">
+      Andy needs your help! 
+      <button id="new-toy-btn">Add a new toy!</button>
+    </p>
+
+    <!-- Form container starts hidden -->
+    <div class="container" style="display: none;">
       <form class="add-toy-form">
         <h3>Create a toy!</h3>
 
         <input
           type="text"
           name="name"
-          value=""
+          id="toy-name"
           placeholder="Enter a toy's name..."
           class="input-text"
         />
@@ -28,7 +34,7 @@
         <input
           type="text"
           name="image"
-          value=""
+          id="toy-image"
           placeholder="Enter a toy's image URL..."
           class="input-text"
         />
@@ -41,11 +47,10 @@
         />
       </form>
     </div>
-    <p style="text-align:center">
-      Andy needs your help! <button id="new-toy-btn">Add a new toy!</button>
-    </p>
 
+    <!-- Toy collection -->
     <div id="toy-collection"></div>
+
     <script type="text/javascript" src="src/index.js"></script>
   </body>
 </html>
